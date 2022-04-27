@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  --main-background-color: white;
+  --main-font-color: black;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+header{
+  background-color: var(--main-background-color);
+  font: var(--main-font-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 1px;
+  padding: 0 40px 0 40px;
+  font-size: medium;
+}
+
+.timer {
+  height: 240px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0 0 0;
+}
+
+.start-page-header {
+  font-size: 3em;
+}
+
+.reset-button {
+  font-size: 16px;
+  height: 30px;
+  line-height: 8px;
+  margin-top: 20px;
+}
+
+.win-loss-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+button {
+  background: radial-gradient(circle, rgba(240,230,140,1) 0%, rgba(187,96,33,0.9542191876750701) 100%);
+  border-radius: 8px;
+  color: #13293d;
+  cursor: pointer;
+  font-size: 2em;
+  letter-spacing: 0.21px;
+  line-height: 16px;
+  max-width: 255px;
+  padding: 20px 52px;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  margin-top: 0.6em;
+}
+
+
+
+
+
+section {
+  flex: 0 auto;
+  padding: 8px;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.word-guess {
+  width: 55vw;
+  height: 400px;
+}
+
+.results {
+  width: 30vw;
+  height: 400px;
+}
+
+.card {
+  background: radial-gradient(circle, rgba(240,230,140,1) 0%, rgba(187,124,33,0.604079131652661) 100%);
+  border: 1px solid #eceff1;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+    rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+  margin: auto;
+  padding: 20px;
+}
+
+.word-blanks {
+  line-height: 360px;
+}
+
+.large-font {
+  font-size: 3.5em;
+  text-align:center;
+}
+
+
+
+@media screen and (max-width: 1183px) {
+  main {
+    flex-direction: column;
+  }
+
+  .word-guess,
+  .results {
+    width: 90vw;
+  }
+
+  section {
+    background-color: white;
+    margin: 20px auto;
+    width: 92vw;
+  }
+}
+
+@media screen and (max-width: 504px) {
+  .large-font {
+    font-size: 2em;
+  }
+
+  .reset-button {
+    font-size: 12px;
+    width: 20ox;
+    
+  }
+
+  .timer {
+    height: 200px;
+  }
+ 
