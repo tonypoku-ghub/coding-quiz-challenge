@@ -8,13 +8,44 @@
   </head>
   <body>
     <header>
-      <h2>View High Score</h2>
+      <div id="view_high_score">
+        <h2><a href="#highscores">View High Score</a></h2>
+      </div>
       <h2>Time: <span class="timer">0</span></h2>
     </header>
 
     <main>
-      <div class="start-page-header">Coding Quiz Challenge</div>
-      <button class="start-button">Start</button>
+      <article class="initArea">
+        <section class="start-page-header header">
+          Coding Quiz Challenge
+        </section>
+        <section class="intro"></section>
+        <button class="start-button button">Start</button>
+      </article>
+      <article class="qandaArea">
+        <section class="question"></section>
+        <section class="quiz-button-list"></section>
+        <section class="answer"></section>
+        <span><hr /></span>
+        <section class="result"></section>
+      </article>
+      <article class="GameOverArea">
+        <section class="heading header">Game Over</section>
+        <section class="score"></section>
+        <section class="save-results">
+          <label for="initials" id="initails-label">Enter Initials: </label>
+          <input type="text" name="initials" id="initials" />
+          <button class="save-initials button">Save</button>
+        </section>
+      </article>
+      <section id="highscores" class="highscores">
+        <section class="heading header">Highscores</section>
+        <ol class="ranked-scores"></ol>
+        <div style="display: flex; flex-flow: row">
+          <button class="back-to-game button">Back</button>
+          <button class="clear-highscore button">Clear Highscores</button>
+        </div>
+      </section>
     </main>
     <script src="assets/js/script.js"></script>
   </body>
