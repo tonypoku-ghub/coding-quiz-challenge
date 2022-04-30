@@ -14,7 +14,7 @@ var backToGame = document.querySelector(".back-to-game");
 
 // Variable initialization
 var gameCountdownInternal = null;
-var timeLimit = 2;
+var timeLimit = 60;
 var activeQuizIndex = -1;
 var quizDelay = 0.5; // Time for next question to display
 var score = 0;
